@@ -13,70 +13,70 @@ namespace BlazorEpic.Client.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 1 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 2 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 3 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 4 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 5 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 6 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 7 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 8 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using BlazorEpic.Client;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\_Imports.razor"
+#line 9 "C:\Blazor src\BlazorEpic\Client\_Imports.razor"
 using BlazorEpic.Client.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\Pages\Login.razor"
+#line 2 "C:\Blazor src\BlazorEpic\Client\Pages\Login.razor"
 using BlazorEpic.Shared;
 
 #line default
@@ -91,7 +91,7 @@ using BlazorEpic.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 24 "C:\Users\rLawrence\source\repos\BlazorEpic\Client\Pages\Login.razor"
+#line 24 "C:\Blazor src\BlazorEpic\Client\Pages\Login.razor"
        
     LoginModel user = new LoginModel();
     string message = string.Empty;

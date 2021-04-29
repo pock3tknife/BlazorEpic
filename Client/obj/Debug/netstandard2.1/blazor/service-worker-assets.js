@@ -65,7 +65,7 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-mwdI\/k6KWRvIlkQZ\/4lKGVPWzsg7+qcaZkhZm\/P5ezY=",
+      "hash": "sha256-YqsSD4SOxK0yau4mM4rfCu6LuaE1LNeOfe1kAVzcaNk=",
       "url": "_framework\/_bin\/BlazorEpic.Client.dll"
     },
     {
@@ -221,7 +221,7 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.dll"
     },
     {
-      "hash": "sha256-6gDW6NeJamNkaPLPMYMaCouWMCBuefaFEyJ7Tc03AFU=",
+      "hash": "sha256-NEtdh1eWUE7to5lOe984zb2MFTsrB0R0V8CeGli9HW8=",
       "url": "_framework\/_bin\/BlazorEpic.Shared.dll"
     },
     {
@@ -277,11 +277,11 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-atqeRB9E9u7BGpRDOA4XSwrw2IuVBm98DrI65PHao1Q=",
+      "hash": "sha256-CukzxKMz5cmuVeLIMpEU03CDx3RYoqD9EOb\/fsj+Xy8=",
       "url": "_framework\/_bin\/BlazorEpic.Client.pdb"
     },
     {
-      "hash": "sha256-pevxAi\/Cv\/70uzz7YfdCNKSlL\/ePgQcwTb\/YTi2FWno=",
+      "hash": "sha256-a2k8o6hpmuXPzaFmCrwcLQCCC+kczm\/cHaOhNwopky0=",
       "url": "_framework\/_bin\/BlazorEpic.Shared.pdb"
     },
     {
@@ -301,9 +301,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-P5sKRW6Tc092d1apEaGrtHt+wxxzscEmiHM1sBMSIrs=",
+      "hash": "sha256-dnuxBL4R3UmzGfYmpo7TZmGfF6ejNVdFSAjXXqtUxwU=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "CDmsKF4D"
+  "version": "8hz0oMKn"
 };
