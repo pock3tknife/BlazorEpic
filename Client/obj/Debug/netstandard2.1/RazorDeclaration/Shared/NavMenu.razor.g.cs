@@ -83,7 +83,7 @@ using BlazorEpic.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Blazor src\BlazorEpic\Client\Shared\NavMenu.razor"
+#line 38 "C:\Blazor src\BlazorEpic\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

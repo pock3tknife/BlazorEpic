@@ -10,6 +10,7 @@ C:\Users\rLawrence\source\repos\BlazorEpic\Shared\obj\Debug\netstandard2.1\Blazo
 C:\Blazor src\BlazorEpic\Shared\bin\Debug\netstandard2.1\BlazorEpic.Shared.deps.json
 C:\Blazor src\BlazorEpic\Shared\bin\Debug\netstandard2.1\BlazorEpic.Shared.dll
 C:\Blazor src\BlazorEpic\Shared\bin\Debug\netstandard2.1\BlazorEpic.Shared.pdb
+C:\Blazor src\BlazorEpic\Shared\obj\Debug\netstandard2.1\BlazorEpic.Shared.csprojAssemblyReference.cache
 C:\Blazor src\BlazorEpic\Shared\obj\Debug\netstandard2.1\BlazorEpic.Shared.AssemblyInfoInputs.cache
 C:\Blazor src\BlazorEpic\Shared\obj\Debug\netstandard2.1\BlazorEpic.Shared.AssemblyInfo.cs
 C:\Blazor src\BlazorEpic\Shared\obj\Debug\netstandard2.1\BlazorEpic.Shared.csproj.CoreCompileInputs.cache

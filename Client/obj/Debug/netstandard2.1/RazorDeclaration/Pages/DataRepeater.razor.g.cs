@@ -75,29 +75,7 @@ using BlazorEpic.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Blazor src\BlazorEpic\Client\Pages\DataRepeater.razor"
-using BlazorEpic.Shared;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "C:\Blazor src\BlazorEpic\Client\Pages\DataRepeater.razor"
-using BlazorEpic.Client.Components;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "C:\Blazor src\BlazorEpic\Client\Pages\DataRepeater.razor"
-using System.Reflection;
-
-#line default
-#line hidden
-#nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/datarepeater")]
-    public partial class DataRepeater : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class DataRepeater<TItem> : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,67 +83,18 @@ using System.Reflection;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 58 "C:\Blazor src\BlazorEpic\Client\Pages\DataRepeater.razor"
+#line 11 "C:\Blazor src\BlazorEpic\Client\Pages\DataRepeater.razor"
        
 
-    private List<Customer> custs;
-    private Customer newcust = new Customer();
+    [Parameter]
+    public RenderFragment<TItem> Row { get; set; }
 
-    protected override async Task OnInitializedAsync()
-    {
-        await base.OnInitializedAsync();
-
-        custs = await Http.GetFromJsonAsync<List<Customer>>("/api/customers");
-    }
-
-    private async Task Add()
-    {
-        using (var msg = await Http.PostAsJsonAsync<Customer>("/api/customers", newcust, System.Threading.CancellationToken.None))
-        {
-            if (msg.IsSuccessStatusCode)
-            {
-                custs.Add(await msg.Content.ReadFromJsonAsync<Customer>());
-                //StateHasChanged();
-            }
-        }
-    }
-
-    private async Task Save(ChangeEventArgs e, Customer cust, string propField)
-    {
-        PropertyInfo pinfo = typeof(Customer).GetProperty(propField);
-        pinfo.SetValue(cust, e.Value);
-
-        using (var msg = await Http.PutAsJsonAsync<Customer>($"/api/customers/{cust.id}", cust, System.Threading.CancellationToken.None))
-        {
-            if (msg.IsSuccessStatusCode)
-            {
-                //StateHasChanged();
-            }
-            else
-            {
-                // DO SOMETHING
-            }
-        }
-    }
-
-    private async Task Delete(string id)
-    {
-        using (var msg = await Http.DeleteAsync($"/api/customers/{id}"))
-        {
-            if (msg.IsSuccessStatusCode)
-            {
-                int i;
-                for (i = 0; i < custs.Count && custs[i].id != id; i++) ;
-                custs.RemoveAt(i);
-                //StateHasChanged();
-            }
-        }
-    }
+    [Parameter]
+    public List<TItem> Items { get; set; }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

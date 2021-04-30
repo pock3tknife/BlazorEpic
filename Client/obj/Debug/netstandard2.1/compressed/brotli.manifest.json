@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\YqsSD4SOxK0yau4mM4rfCu6LuaE1LNeOfe1kAVzcaNk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\l-lP708ZJFvCIg2yzfYRraotA7HN6tNI8_al_CCflDk=.hash",
       "Source": "C:\\Blazor src\\BlazorEpic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorEpic.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorEpic.Client.dll.br"
     },
@@ -196,7 +196,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\NEtdh1eWUE7to5lOe984zb2MFTsrB0R0V8CeGli9HW8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\_N39IHCTa0T2Y1O425HxGhJyNvvUSe_e1Jm9fVgMAw0=.hash",
       "Source": "C:\\Blazor src\\BlazorEpic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorEpic.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorEpic.Shared.dll.br"
     },
@@ -266,12 +266,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CukzxKMz5cmuVeLIMpEU03CDx3RYoqD9EOb-fsj_Xy8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CWN1Bs7xE2DuvWHhAgvAv8kctFEAem1PeV_DjrvgzgU=.hash",
       "Source": "C:\\Blazor src\\BlazorEpic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorEpic.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorEpic.Client.pdb.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\a2k8o6hpmuXPzaFmCrwcLQCCC_kczm-cHaOhNwopky0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\IWpt0gwNWK3HVq7gpUCHlZVYuQJNj4tk9J9HQHa5tbg=.hash",
       "Source": "C:\\Blazor src\\BlazorEpic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\BlazorEpic.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorEpic.Shared.pdb.br"
     },
@@ -296,12 +296,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\dnuxBL4R3UmzGfYmpo7TZmGfF6ejNVdFSAjXXqtUxwU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ruAKpefFAMh_hsCbnf3powsOxXa1o1qzbAotghlXN0M=.hash",
       "Source": "C:\\Blazor src\\BlazorEpic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\h67G9DRgjfjft1eN2_zEygiry9XIRpiOuiYsGUBRkk0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6uTqmuFqVrMqRDUfJ0NzxDE151CfnM4oPpH89dCNNgs=.hash",
       "Source": "C:\\Blazor src\\BlazorEpic\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.br"
     }

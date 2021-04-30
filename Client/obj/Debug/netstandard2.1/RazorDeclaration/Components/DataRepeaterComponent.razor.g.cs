@@ -75,6 +75,13 @@ using BlazorEpic.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Blazor src\BlazorEpic\Client\Components\DataRepeaterComponent.razor"
+using System.Reflection;
+
+#line default
+#line hidden
+#nullable disable
     public partial class DataRepeaterComponent<TItem> : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -83,14 +90,118 @@ using BlazorEpic.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 11 "C:\Blazor src\BlazorEpic\Client\Components\DataRepeaterComponent.razor"
+#line 42 "C:\Blazor src\BlazorEpic\Client\Components\DataRepeaterComponent.razor"
        
 
     [Parameter]
-    public RenderFragment<TItem> Row { get; set; }
+    public List<TItem> Items { get; set; }
 
     [Parameter]
-    public List<TItem> Items { get; set; }
+    public string ParentClassName { get; set; }
+
+    [Parameter]
+    public string TableClassName { get; set; }
+
+    private string[] hideColumns = { };
+    [Parameter]
+    public string HideColumns
+    {
+        get
+        {
+            return string.Join(',', hideColumns);
+        }
+
+        set
+        {
+            hideColumns = value.Split(',');
+        }
+    }
+
+    [Parameter]
+    public string DataKeyColumn { get; set; }
+
+    private MemberInfo[] info;
+
+    private string GetDataKey(TItem item)
+    {
+        if (!string.IsNullOrEmpty(DataKeyColumn))
+        {
+            foreach (var member in info)
+            {
+                if (member.MemberType == MemberTypes.Property && member.Name == DataKeyColumn)
+                    return item.GetType().GetProperty(member.Name).GetValue(item).ToString();
+            }
+        }
+        return string.Empty;
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        if (Items != null && Items.Count > 0)
+        {
+            Type type = Items[0].GetType();
+            info = type.GetMembers();
+        }
+    }
+    private string sortedField;
+    private bool descending = true;
+    private void Sort(string field)
+    {
+        if (sortedField == field)
+            descending = !descending;
+        sortedField = field;
+        if (descending)
+        {
+            Items.Sort((a, b) =>
+            {
+                var obj = typeof(TItem).GetProperty(field).GetValue(a);
+                if (obj is DateTime)
+                {
+                    DateTime dta = (DateTime)typeof(TItem).GetProperty(field).GetValue(a);
+                    DateTime dtb = (DateTime)typeof(TItem).GetProperty(field).GetValue(b);
+                    return dta.ToString("yyyyMMddHHmmssfff").CompareTo(dtb.ToString("yyyyMMddHHmmssfff"));
+                }
+                else if (obj is byte || obj is sbyte || obj is short || obj is ushort || obj is int)
+                {
+                    int ia = (int)typeof(TItem).GetProperty(field).GetValue(a);
+                    int ib = (int)typeof(TItem).GetProperty(field).GetValue(b);
+                    return ia - ib;
+                }
+                else
+                {
+                    var ta = typeof(TItem).GetProperty(field).GetValue(a);
+                    var tb = typeof(TItem).GetProperty(field).GetValue(b);
+                    return ta.ToString().CompareTo(tb.ToString());
+                }
+            });
+        }
+        else
+        {
+            Items.Sort((b, a) =>
+            {
+                var obj = typeof(TItem).GetProperty(field).GetValue(a);
+                if (obj is DateTime)
+                {
+                    DateTime dta = (DateTime)typeof(TItem).GetProperty(field).GetValue(a);
+                    DateTime dtb = (DateTime)typeof(TItem).GetProperty(field).GetValue(b);
+                    return dta.ToString("yyyyMMddHHmmssfff").CompareTo(dtb.ToString("yyyyMMddHHmmssfff"));
+                }
+                else if (obj is byte || obj is sbyte || obj is short || obj is ushort || obj is int)
+                {
+                    int ia = (int)typeof(TItem).GetProperty(field).GetValue(a);
+                    int ib = (int)typeof(TItem).GetProperty(field).GetValue(b);
+                    return ia - ib;
+                }
+                else
+                {
+                    var ta = typeof(TItem).GetProperty(field).GetValue(a);
+                    var tb = typeof(TItem).GetProperty(field).GetValue(b);
+                    return ta.ToString().CompareTo(tb.ToString());
+                }
+            });
+        }
+    }
 
 #line default
 #line hidden

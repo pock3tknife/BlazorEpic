@@ -221,6 +221,7 @@ C:\Users\rLawrence\source\repos\BlazorEpic\Server\obj\Debug\netcoreapp3.1\Blazor
 C:\Users\rLawrence\source\repos\BlazorEpic\Server\obj\Debug\netcoreapp3.1\BlazorEpic.Server.dll
 C:\Users\rLawrence\source\repos\BlazorEpic\Server\obj\Debug\netcoreapp3.1\BlazorEpic.Server.pdb
 C:\Users\rLawrence\source\repos\BlazorEpic\Server\obj\Debug\netcoreapp3.1\BlazorEpic.Server.genruntimeconfig.cache
+C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorEpic.Client.StaticWebAssets.xml
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
@@ -375,7 +376,6 @@ C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hans
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hans\Microsoft.CodeAnalysis.resources.dll
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorEpic.Client.StaticWebAssets.xml
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorEpic.Server.StaticWebAssets.xml
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorEpic.Server.exe
 C:\Blazor src\BlazorEpic\Server\bin\Debug\netcoreapp3.1\BlazorEpic.Server.deps.json
